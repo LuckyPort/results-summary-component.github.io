@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Your Result
+  76
+  of 100
+
+  Great
+  You scored higher than 65% of the people who have taken these tests.
+  
+  Summary
+
+  Reaction
+  80 / 100
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue -->
+    <div class="project">
+      <div class="project-container">
+        <div class="kartu">
+          <div class="kartu-kiri">
+            <p>Your Result</p>
+            <div class="circle">
+              <h1>76</h1>
+              <p>of 100</p>
+            </div>
+            <h1>Great</h1>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+          <div class="kartu-kanan">
+            <h2>Summary</h2>
+            <ul>
+              <li style="background: var(--Light-red);" class="items">
+                <img src="/assets/images/icon-reaction.svg" alt="" /> Reaction
+                <p>80  &nbsp;<span> / 100</span></p>
+              </li>
+              <li style="background: var(--Orange-yellow);" class="items">
+                <img src="/assets/images/icon-memory.svg" alt="" /> Memory
+                <p>92  &nbsp;<span> / 100</span></p>
+              </li>
+              <li style="background: var(--Green-teal);" class="items">
+                <img src="/assets/images/icon-verbal.svg" alt="" /> Verbal
+                <p>61  &nbsp;<span> / 100</span></p>
+              </li>
+              <li style="background: var(--Cobalt-blue);" class="items">
+                <img src="/assets/images/icon-visual.svg" alt="" /> Visual
+                <p>72  &nbsp;<span> / 100</span></p>
+              </li>
+              <button>Continue</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Natan Winson Pratama</a>.
+    </div>
+  </body>
+</html>

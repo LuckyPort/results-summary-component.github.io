@@ -1,0 +1,183 @@
+:root {
+  --Light-red: hsla(0, 100%, 67%, 10%);
+  --Orange-yellow: hsla(39, 100%, 56%, 10%);
+  --Green-teal: hsla(166, 100%, 37%, 10%);
+  --Cobalt-blue: hsla(234, 85%, 45%, 10%);
+  --gradient-1: hsl(252, 100%, 67%);
+  --gradient-1-1: hsl(241, 81%, 54%);
+  --gradient-2 : hsla(256, 72%, 46%, 1);
+  --gradient-2-2 :  hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  --primary-font: "Hanken"
+}
+@font-face {
+    font-family: "Hanken" ;
+    src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+p{
+   font-size: 18px;
+}
+.project{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:  var(--White);
+}
+.project-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kartu{
+    position: relative;
+    height: 400px;
+    width: 600px;
+    box-shadow: 5px 5px 5px rgba(0,0, 0,0.09);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: var(--primary-font);
+}
+.kartu-kiri{
+    flex: 1;
+    padding: 30px;
+    background: linear-gradient(to bottom, var(--gradient-1), var(--gradient-1-1));
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+}
+.kartu-kiri > p{
+    color: var(--Light-lavender);
+    font-weight: 500;
+    margin: 0;
+}
+
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--gradient-2), var(--gradient-2-2));
+    flex-direction: column;
+
+}
+.kartu-kiri > .circle > p{
+    margin: 0;
+    color: var(--Pale-blue);
+    font-size: 14px;
+    opacity: 50%;
+}
+.kartu-kiri >.circle > h1{
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+}
+.kartu-kiri > h1{
+    margin: 0;
+    color: #fff;
+}
+
+.kartu-kanan{
+    flex: 1;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.kartu-kanan > h2{
+    margin: 0;
+}
+.kartu-kanan > ul{
+    padding: 0; 
+}
+.kartu-kanan > ul > .items {
+    position: relative;
+    list-style: none;
+    margin: 20px 0px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+.kartu-kanan > ul > .items > img {
+    vertical-align: middle;
+}
+.kartu-kanan > ul > .items > p{
+    position: absolute;
+    font-size: 14px;
+    margin: 0;
+    right: 10px;
+    font-weight: bold;
+}
+button{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--Dark-gray-blue);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    transition: .4s ease;
+    cursor: pointer;
+    font-family: var(--primary-font);
+}
+button:hover{
+    background-color: var(--gradient-1-1);
+    transition: .4s ease
+}
+span{
+    color: var(--Dark-gray-blue);
+    opacity: 50%;
+}
+.attribution{
+    text-align: center;
+    font-family: var(--primary-font);
+    color: #fff;
+    background-color: #191919;
+    padding: 10px
+}
+.attribution > a{
+    color: var(--primary-cream)
+}
+
+@media screen and (max-width: 720px){
+    .kartu{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+
+    }
+    .kartu-kiri{
+        height: 200px;
+        border-radius: 0 0 25px 25px;
+        flex: 1.5;
+    }
+
+    .kartu-kanan{
+        flex: 2;
+    }
+    ul{
+        margin: 0;
+    }
+}
