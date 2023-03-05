@@ -15,7 +15,7 @@
 }
 @font-face {
     font-family: "Hanken" ;
-    src: url(https://luckyport.github.io/results-summary-component.github.io/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    src: url("https://luckyport.github.io/results-summary-component.github.io/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
 }
 html{
     box-sizing: border-box;
